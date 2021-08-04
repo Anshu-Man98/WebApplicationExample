@@ -16,13 +16,13 @@ namespace WebApplication1.BusinessLayer
         {
             _context = context;
         }
-        public async Task<bool> AddEmployeeData(string firstName, string lastName, string gId, string email, DateTime lastWorkingDate)
+        public async Task<bool> AddEmployeeData(string firstName, string lastName, string gIddd, string email, DateTime lastWorkingDate)
         {
             EmployeeDeactivation employee = new EmployeeDeactivation()
             {
                 Firstname = firstName,
                 Lastname = lastName,
-                GId = gId,
+                GId = gIddd,
                 Email = email,
                 Date = lastWorkingDate
             };
